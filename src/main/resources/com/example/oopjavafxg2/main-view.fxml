@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<GridPane prefHeight="400.0" prefWidth="600.0"
+          xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.oopjavafxg2.MainController" gridLinesVisible="false"
+          alignment="CENTER">
 
-</AnchorPane>
+    <!-- Rreshti 1 -->
+    <Label text="Username" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtUserName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- Rreshti 2 -->
+    <Label text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="txtPassword" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <!-- Rreshti 3 -->
+    <CheckBox text="Save password!"
+              fx:id="chbSave"
+              GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <!-- Rreshti 4 -->
+    <Button text="OK" fx:id="btnOK" GridPane.rowIndex="3" GridPane.columnIndex="0" minWidth="75"
+    onAction="#login"/>
+    <Button text="Cancel" fx:id="btnCancel"
+            GridPane.rowIndex="3" GridPane.columnIndex="1" minWidth="75"
+    onAction="#cancel"/>
+
+    <columnConstraints>
+        <ColumnConstraints minWidth="100"/>
+        <ColumnConstraints minWidth="200"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+    </rowConstraints>
+</GridPane>
