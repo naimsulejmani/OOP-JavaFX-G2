@@ -8,31 +8,53 @@
           fx:controller="com.example.oopjavafxg2.MainController" gridLinesVisible="false"
           alignment="CENTER">
 
-    <!-- Rreshti 1 -->
-    <Label text="Username" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-    <TextField fx:id="txtUserName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
 
-    <!-- Rreshti 2 -->
-    <Label text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-    <PasswordField fx:id="txtPassword" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Surname" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtSurname" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
 
-    <!-- Rreshti 3 -->
-    <CheckBox text="Save password!"
-              fx:id="chbSave"
-              GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Label text="Birthdate" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <DatePicker fx:id="dpBirthdate" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
-    <!-- Rreshti 4 -->
-    <Button text="OK" fx:id="btnOK" GridPane.rowIndex="3" GridPane.columnIndex="0" minWidth="75"
-    onAction="#login"/>
-    <Button text="Cancel" fx:id="btnCancel"
-            GridPane.rowIndex="3" GridPane.columnIndex="1" minWidth="75"
-    onAction="#cancel"/>
+
+    <Label text="Username" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtUserName" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+
+    <Label text="Password" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="txtPassword" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Confirm Password" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="txtConfirmPassword" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <CheckBox text="Do you accept Terms and Conditions!"
+              fx:id="chbAccept"
+              GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <Button text="OK" fx:id="btnOK" GridPane.rowIndex="7" GridPane.columnIndex="0" minWidth="75"
+            onAction="#register"/>
+    <Button text="Reset" fx:id="btnReset"
+            GridPane.rowIndex="7" GridPane.columnIndex="1" minWidth="75"
+            onAction="#reset"/>
+
+    <Label text="Lista e perdorueseve" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <ListView fx:id="lvUsers" GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <Label text="Tabela e perdorueseve" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+    <TableView fx:id="tvUsers" GridPane.rowIndex="11" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+
 
     <columnConstraints>
         <ColumnConstraints minWidth="100"/>
         <ColumnConstraints minWidth="200"/>
     </columnConstraints>
     <rowConstraints>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
         <RowConstraints minHeight="35"/>
         <RowConstraints minHeight="35"/>
         <RowConstraints minHeight="35"/>
