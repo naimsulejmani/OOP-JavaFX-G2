@@ -13,7 +13,7 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader =
-                new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
+                new FXMLLoader(MainApplication.class.getResource("user-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 480);
         stage.setTitle("Login to Cacttus Education!");
         stage.setScene(scene);

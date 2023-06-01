@@ -2,16 +2,16 @@ package com.example.oopjavafxg2.controllers;
 
 import com.example.oopjavafxg2.models.User;
 import com.example.oopjavafxg2.repositories.UserRepository;
-import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.paint.Color;
 
-public class MainController {
+import java.util.List;
+
+public class UserController {
 
     @FXML
     private TextField txtName;
@@ -36,6 +36,31 @@ public class MainController {
 
     @FXML
     private Button btnOK;
+
+    @FXML
+    private ListView<User> lvUsers;
+
+    @FXML
+    private TableView<User> tvUsers;
+
+
+    private List<User> userList;
+    private ObservableList<User> userObservableList;
+    private UserRepository repository;
+
+    public void initialize() {
+        repository = new UserRepository();
+        userObservableList = FXCollections.observableArrayList();
+        refresh();
+    }
+
+    private void refresh() {
+        userList = repository.findAll();
+        userObservableList.clear();
+        userObservableList.addAll(userList);
+        lvUsers.setItems(userObservableList);
+    }
+
 
     public void cancel() {
         System.exit(0);
