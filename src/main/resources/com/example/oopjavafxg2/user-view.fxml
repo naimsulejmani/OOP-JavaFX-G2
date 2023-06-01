@@ -42,6 +42,9 @@
     <Button text="Reset" fx:id="btnReset"
             GridPane.rowIndex="7" GridPane.columnIndex="1" minWidth="75"
             onAction="#reset"/>
+    <Button text="Delete" fx:id="btnDelete" GridPane.rowIndex="7" GridPane.columnIndex="2"
+            onAction="#delete" visible="false"
+    />
 
     <Label text="Lista e perdorueseve" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
     <ListView fx:id="lvUsers" GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="2"/>

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b636aa0-1a8d-4c28-a5b4-1fedb5f268bd" name="Changes" comment="Created repository, linked with UI">
+    <list default="true" id="9b636aa0-1a8d-4c28-a5b4-1fedb5f268bd" name="Changes" comment="UserRepository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/infrastructures/ToObjectAble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/infrastructures/ToObjectAble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/oopjavafxg2/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/oopjavafxg2/user-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oopjavafxg2/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/oopjavafxg2/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/oopjavafxg2/user-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <workItem from="1685113750009" duration="76000" />
       <workItem from="1685380177971" duration="5780000" />
       <workItem from="1685631882375" duration="402000" />
-      <workItem from="1685640175668" duration="1945000" />
+      <workItem from="1685640175668" duration="4984000" />
     </task>
     <task id="LOCAL-00001" summary="asdsadasd">
       <created>1685113817043</created>
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685385958274</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UserRepository">
+      <created>1685642258737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685642258737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +123,7 @@
     <MESSAGE value="asdsadasd" />
     <MESSAGE value="Adding registration form and alert" />
     <MESSAGE value="Created repository, linked with UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created repository, linked with UI" />
+    <MESSAGE value="UserRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserRepository" />
   </component>
 </project>

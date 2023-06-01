@@ -83,6 +83,11 @@ public class User {
     public void setAccepted(boolean accepted) {
         this.accepted = accepted;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d - %s - %s %s", id, username, name, surname);
+    }
 }
 
 
